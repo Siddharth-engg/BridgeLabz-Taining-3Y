@@ -11,12 +11,13 @@
     background-color: rgb(107, 190, 226);
     height: 100px;
     border-radius: 10px;
+    text-align: center;
 
 }
 
 .box1{
     background-color: bisque;
-    grid-column: 2/4;
+    grid-area: box1;
 }
 
 .box2{
