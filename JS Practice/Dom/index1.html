@@ -1,0 +1,98 @@
+// let headingE1 = document.getElementById("heading");   
+let headingE1 = document.querySelector("#heading");
+// headingE1.style.color = "red";
+// headingE1.style.backgroundColor = "yellow";
+// headingE1.style.fontSize = "50px";
+// headingE1.textContent = "bhuihn";
+// headingE1.innerHTML += "<h2>HELLO , NAMASTE</h2>";
+
+
+let btn = document.getElementById("btn");
+
+let count = 0;
+btn.addEventListener("click", function() {
+    count++;
+    headingE1.textContent = "You clicked me " + count + " times";
+});
+btn.addEventListener("click", function() {
+    headingE1.style.color = "green";
+    headingE1.style.backgroundColor = "lightgray";
+    headingE1.style.fontSize = "30px";
+    headingE1.textContent = "hgyugtyrg";
+
+});
+
+console.log(headingE1);
+
+//Increament
+let btnE1 = document.querySelector("#btn4");
+let count1 = 0;
+let fun = () => {
+    count1++;
+    // headingE1.style.color = "red";
+    headingE1.textContent = count1;
+}
+btnE1.addEventListener("click", fun);
+
+//decreament
+let btnE2 = document.querySelector("#btn2");
+let count2 = 0;
+let fun2 = () => {
+    count2--;
+    headingE1.textContent = count2;
+}
+btnE2.addEventListener("click", fun2);
+
+//reset
+let btnE3 = document.querySelector("#btn3");
+let count3 = 0;
+let fun3 = () => {
+    count3 = 0;
+    headingE1.textContent = count3;
+}
+btnE3.addEventListener("click", fun3);
+
+
+console.log(headingE1);
+let box = document.querySelector(".box");
+box.addEventListener("mouseover", function() {
+    box.style.backgroundColor = "blue";
+});
+box.addEventListener("mouseout", function() {
+    box.style.backgroundColor = "lightgray";                                                    
+});
+
+
+
+let redBtn = document.querySelector("#btn5");
+let greenBtn = document.querySelector("#btn6");
+let blueBtn = document.querySelector("#btn7");
+
+btn5.addEventListener("click", function() {
+    box.classList.remove("bg-green");
+    box.classList.remove("bg-blue");
+     box.classList.add("bg-red");  
+});
+
+btn6.addEventListener("click", function() {
+    box.classList.remove("bg-red");
+    box.classList.remove("bg-blue");   
+    box.classList.add("bg-green");
+});
+
+btn7.addEventListener("click", function() {
+    box.classList.remove("bg-red");
+    box.classList.remove("bg-green");
+    box.classList.add("bg-blue");
+});
+
+
+
+const inputE1 = document.querySelector("#input");
+const outputE1 = document.querySelector("#btn8");
+
+btn8.addEventListener("click", function() {
+    let val = inputE1.value;
+    listE1.textContent = val;
+    console.log(val);
+})
