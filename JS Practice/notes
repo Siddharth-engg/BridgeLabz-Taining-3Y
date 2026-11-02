@@ -1,0 +1,13 @@
+
+*OOPS
+
+
+encapsulation- data security- wrapping of data and methods into a single unit
+
+abstraction- data hiding- hiding complexity from user and showing only imp data to user
+
+inheritance- data reusability- one class inherit prop from other
+
+polymophism- many forms- same method name behaves diff dependimg on obj.
+
+
